@@ -167,34 +167,83 @@ function initContactForm() {
   const form = document.querySelector('.contact__form-el');
   if (!form) return;
 
-  form.addEventListener('submit', (event) => {
+  const endpoint = form.getAttribute('action');
+  const status = form.querySelector('.form-status');
+
+  function setStatus(message, type) {
+    if (!status) return;
+    status.textContent = message;
+    status.hidden = !message;
+    status.classList.remove('form-status--error', 'form-status--success');
+    if (type) status.classList.add('form-status--' + type);
+  }
+
+  form.addEventListener('submit', async (event) => {
     event.preventDefault();
+
+    // Basic client-side validation (native + non-empty)
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
 
     const btn = form.querySelector('button[type="submit"]');
     const originalText = btn ? btn.textContent : '';
+
+    // Guard: endpoint not yet configured
+    if (!endpoint || endpoint.includes('YOUR_FORM_ID')) {
+      setStatus('Contact form is not fully configured yet. Please email us at ai@aigridventures.ai.', 'error');
+      return;
+    }
 
     if (btn) {
       btn.disabled = true;
       btn.textContent = 'Sending…';
     }
+    setStatus('', null);
 
-    // Simulate async submission (replace with real endpoint)
-    setTimeout(() => {
-      if (btn) {
-        btn.textContent = 'Message Sent ✓';
-        btn.style.background = 'linear-gradient(135deg, #00c853, #00e676)';
-      }
+    try {
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { Accept: 'application/json' },
+      });
 
-      // Reset after 3 seconds
-      setTimeout(() => {
+      if (response.ok) {
         form.reset();
+        setStatus('Thanks — your message has been sent. We\'ll be in touch shortly.', 'success');
+        if (btn) {
+          btn.textContent = 'Message Sent ✓';
+          btn.style.background = 'linear-gradient(135deg, #00c853, #00e676)';
+        }
+        setTimeout(() => {
+          if (btn) {
+            btn.disabled = false;
+            btn.textContent = originalText;
+            btn.style.background = '';
+          }
+        }, 3000);
+      } else {
+        let msg = 'Something went wrong. Please try again or email ai@aigridventures.ai.';
+        try {
+          const data = await response.json();
+          if (data && data.errors && data.errors.length) {
+            msg = data.errors.map((e) => e.message).join(' ');
+          }
+        } catch (_) { /* keep default */ }
+        setStatus(msg, 'error');
         if (btn) {
           btn.disabled = false;
           btn.textContent = originalText;
-          btn.style.background = '';
         }
-      }, 3000);
-    }, 1200);
+      }
+    } catch (err) {
+      setStatus('Network error. Please check your connection or email ai@aigridventures.ai.', 'error');
+      if (btn) {
+        btn.disabled = false;
+        btn.textContent = originalText;
+      }
+    }
   });
 }
 

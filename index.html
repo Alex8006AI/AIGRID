@@ -661,7 +661,7 @@
 
             <!-- Form -->
             <div class="reveal reveal-delay-2">
-              <form class="contact__form contact__form-el" novalidate aria-label="Contact form">
+              <form class="contact__form contact__form-el" method="POST" action="https://formspree.io/f/YOUR_FORM_ID" novalidate aria-label="Contact form">
 
                 <div class="form-row">
                   <div class="form-group">
@@ -727,6 +727,8 @@
                     required
                   ></textarea>
                 </div>
+
+                <p class="form-status" role="status" aria-live="polite" hidden></p>
 
                 <button type="submit" class="btn btn--primary btn--lg" style="width:100%;">
                   Send Message
