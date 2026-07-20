@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AIGRID Ventures LLC — Investing, building and operating next-generation AI data centers and GPU computing infrastructure across North America." />
+    <meta name="keywords" content="AI infrastructure, AI data center, GPU servers, colocation, managed hosting, NVIDIA, HGX, AI computing" />
+    <meta name="author" content="AIGRID Ventures LLC" />
+
+    <!-- Open Graph -->
+    <meta property="og:type"        content="website" />
+    <meta property="og:title"       content="AIGRID Ventures — Powering the Future of AI Infrastructure" />
+    <meta property="og:description" content="AI Infrastructure Investment · AI Data Centers · GPU Servers · Hosting · Operations" />
+    <meta property="og:url"         content="https://aigridventures.com" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card"        content="summary_large_image" />
+    <meta name="twitter:title"       content="AIGRID Ventures" />
+    <meta name="twitter:description" content="Next-generation AI computing infrastructure." />
+
+    <title>AIGRID Ventures — Powering the Future of AI Infrastructure</title>
+
+    <!-- Preconnect for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Favicon (inline SVG data URI) -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%2300a3ff'/><text x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-family='Inter,sans-serif' font-weight='800' font-size='13' fill='%23050a14'>AG</text></svg>"
+    />
+  </head>
+
+  <body>
+
+    <!-- ====================================================
+         Site Header
+         ==================================================== -->
+    <header class="site-header" role="banner">
+      <nav class="nav" aria-label="Main navigation">
+
+        <!-- Logo -->
+        <a href="#home" class="nav__logo" aria-label="AIGRID Ventures homepage">
+          <div class="nav__logo-mark" aria-hidden="true">AG</div>
+          <span class="nav__logo-text">AIGRID <span>Ventures</span></span>
+        </a>
+
+        <!-- Desktop Links -->
+        <ul class="nav__links" role="list">
+          <li><a href="#about"      class="nav__link">About</a></li>
+          <li><a href="#services"   class="nav__link">Services</a></li>
+          <li><a href="#solutions"  class="nav__link">Solutions</a></li>
+          <li><a href="#process"    class="nav__link">Projects</a></li>
+          <li><a href="#partners"   class="nav__link">Partners</a></li>
+          <li><a href="#investment" class="nav__link">Investment</a></li>
+          <li><a href="#contact"    class="nav__link">Contact</a></li>
+        </ul>
+
+        <!-- Desktop CTA -->
+        <div class="nav__actions">
+          <a href="#contact" class="btn btn--primary">Get Started</a>
+        </div>
+
+        <!-- Mobile Toggle -->
+        <button
+          class="nav__toggle"
+          aria-label="Toggle mobile menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="nav__mobile" aria-hidden="true">
+        <ul class="nav__mobile-links" role="list">
+          <li><a href="#about"      class="nav__mobile-link">About</a></li>
+          <li><a href="#services"   class="nav__mobile-link">Services</a></li>
+          <li><a href="#solutions"  class="nav__mobile-link">Solutions</a></li>
+          <li><a href="#process"    class="nav__mobile-link">Projects</a></li>
+          <li><a href="#partners"   class="nav__mobile-link">Partners</a></li>
+          <li><a href="#investment" class="nav__mobile-link">Investment</a></li>
+          <li><a href="#contact"    class="nav__mobile-link">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn btn--primary" style="width:100%;justify-content:center;">Get Started</a>
+      </div>
+    </header>
+
+
+    <main id="main-content">
+
+      <!-- ====================================================
+           Hero
+           ==================================================== -->
+      <section id="home" class="hero" aria-labelledby="hero-heading">
+
+        <!-- Background decorations -->
+        <div class="hero__grid" aria-hidden="true"></div>
+        <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
+        <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
+        <div class="hero__orb hero__orb--3" aria-hidden="true"></div>
+
+        <div class="hero__content">
+
+          <div class="hero__badge" role="note">
+            <span class="hero__badge-dot" aria-hidden="true"></span>
+            AI Infrastructure · North America
+          </div>
+
+          <h1 id="hero-heading" class="hero__title">
+            Powering the Future of<br />
+            <span class="text-gradient">AI Infrastructure</span>
+          </h1>
+
+          <p class="hero__subtitle">
+            Investing, building and operating next-generation AI data centers.
+            Enterprise-grade GPU computing, colocation, and lifecycle operations
+            across North America.
+          </p>
+
+          <div class="hero__cta">
+            <a href="#solutions" class="btn btn--primary btn--lg">Explore Solutions</a>
+            <a href="#contact"   class="btn btn--secondary btn--lg">Contact Us</a>
+          </div>
+
+          <div class="hero__stats" role="list">
+            <div class="hero__stat" role="listitem">
+              <div class="hero__stat-value">
+                <span data-counter="50" data-suffix="MW+">0MW+</span>
+              </div>
+              <div class="hero__stat-label">Deployable Power Capacity</div>
+            </div>
+
+            <div class="hero__divider" aria-hidden="true"></div>
+
+            <div class="hero__stat" role="listitem">
+              <div class="hero__stat-value">
+                <span data-counter="6" data-suffix=" Sites">0 Sites</span>
+              </div>
+              <div class="hero__stat-label">Strategic Site Portfolio</div>
+            </div>
+
+            <div class="hero__divider" aria-hidden="true"></div>
+
+            <div class="hero__stat" role="listitem">
+              <div class="hero__stat-value">
+                <span data-counter="24" data-suffix="/7">0/7</span>
+              </div>
+              <div class="hero__stat-label">Operations Center</div>
+            </div>
+
+            <div class="hero__divider" aria-hidden="true"></div>
+
+            <div class="hero__stat" role="listitem">
+              <div class="hero__stat-value">
+                <span data-counter="100" data-suffix="% NVIDIA">0% NVIDIA</span>
+              </div>
+              <div class="hero__stat-label">Certified Ecosystem</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="hero__scroll" aria-hidden="true">
+          <div class="hero__scroll-line"></div>
+          <span>Scroll</span>
+        </div>
+
+      </section>
+
+
+      <!-- ====================================================
+           About
+           ==================================================== -->
+      <section id="about" class="section" aria-labelledby="about-heading">
+        <div class="container">
+          <div class="about__grid">
+
+            <!-- Left: Text -->
+            <div class="reveal">
+              <p class="label about__label">Who We Are</p>
+              <h2 id="about-heading" class="about__title">
+                The AI Infrastructure<br />
+                <span class="text-gradient">Company</span>
+              </h2>
+              <p class="about__desc">
+                AIGRID Ventures LLC is an AI infrastructure company focused on the
+                investment, development, deployment and operation of next-generation
+                AI computing facilities. We specialize in delivering scalable AI
+                infrastructure for enterprise customers, AI startups, cloud providers,
+                research institutions and hyperscale partners.
+              </p>
+              <p class="about__desc">
+                Our expertise spans the complete lifecycle of AI infrastructure —
+                from site acquisition and power strategy to GPU deployment, managed
+                hosting and 24×7 operations.
+              </p>
+
+              <div class="about__values" role="list">
+                <div class="about__value" role="listitem">
+                  <div class="about__value-icon" aria-hidden="true"></div>
+                  Innovation
+                </div>
+                <div class="about__value" role="listitem">
+                  <div class="about__value-icon" aria-hidden="true"></div>
+                  Reliability
+                </div>
+                <div class="about__value" role="listitem">
+                  <div class="about__value-icon" aria-hidden="true"></div>
+                  Integrity
+                </div>
+                <div class="about__value" role="listitem">
+                  <div class="about__value-icon" aria-hidden="true"></div>
+                  Partnership
+                </div>
+                <div class="about__value" role="listitem">
+                  <div class="about__value-icon" aria-hidden="true"></div>
+                  Sustainability
+                </div>
+                <div class="about__value" role="listitem">
+                  <div class="about__value-icon" aria-hidden="true"></div>
+                  Performance
+                </div>
+              </div>
+
+              <p style="font-size:var(--text-sm);color:var(--color-text-muted);font-style:italic;margin-top:var(--space-4);">
+                <strong style="color:var(--color-primary);">Mission:</strong>
+                Accelerating the deployment of AI computing infrastructure worldwide.<br />
+                <strong style="color:var(--color-primary);">Vision:</strong>
+                Become a leading AI infrastructure platform connecting power, compute and capital.
+              </p>
+            </div>
+
+            <!-- Right: Visual Card -->
+            <div class="about__visual reveal reveal-delay-2">
+              <div class="about__card">
+                <div class="about__card-header">
+                  <div class="about__card-icon" aria-hidden="true">⚡</div>
+                  <div>
+                    <div class="about__card-title">AIGRID Ventures LLC</div>
+                    <div class="about__card-subtitle">AI Infrastructure Platform</div>
+                  </div>
+                </div>
+
+                <div class="about__metrics" role="list">
+                  <div class="about__metric" role="listitem">
+                    <div class="about__metric-value">3–50<span style="font-size:0.6em">MW</span></div>
+                    <div class="about__metric-label">Deployment Range</div>
+                  </div>
+                  <div class="about__metric" role="listitem">
+                    <div class="about__metric-value">24/7</div>
+                    <div class="about__metric-label">NOC Operations</div>
+                  </div>
+                  <div class="about__metric" role="listitem">
+                    <div class="about__metric-value">7</div>
+                    <div class="about__metric-label">Core Services</div>
+                  </div>
+                </div>
+
+                <div class="about__expertise" role="list" aria-label="Expertise areas">
+                  <span class="about__tag">AI Data Centers</span>
+                  <span class="about__tag">GPU Computing</span>
+                  <span class="about__tag">NVIDIA Ecosystem</span>
+                  <span class="about__tag">Colocation</span>
+                  <span class="about__tag">Managed Hosting</span>
+                  <span class="about__tag">Power Infrastructure</span>
+                  <span class="about__tag">AI Research Labs</span>
+                  <span class="about__tag">Infrastructure Investment</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ====================================================
+           Services
+           ==================================================== -->
+      <section id="services" class="section section--dark" aria-labelledby="services-heading">
+        <div class="container">
+
+          <div class="section-header reveal">
+            <p class="label">What We Do</p>
+            <h2 id="services-heading">Full-Lifecycle AI Infrastructure</h2>
+            <p>
+              From investment and site development to GPU deployment and 24×7 managed
+              operations — one partner, complete solution.
+            </p>
+          </div>
+
+          <div class="services-grid">
+
+            <!-- Service 1 -->
+            <article class="service-card reveal reveal-delay-1">
+              <div class="service-card__icon" aria-hidden="true">🏗️</div>
+              <h3 class="service-card__title">AI Infrastructure Investment</h3>
+              <p class="service-card__desc">
+                We identify, acquire and develop strategic sites capable of supporting
+                next-generation AI infrastructure — from power planning to joint-venture
+                campus development.
+              </p>
+              <ul class="service-card__list" aria-label="Service details">
+                <li class="service-card__item">Site acquisition &amp; power strategy</li>
+                <li class="service-card__item">Utility coordination</li>
+                <li class="service-card__item">Joint venture development</li>
+                <li class="service-card__item">Build-to-suit AI campuses</li>
+              </ul>
+            </article>
+
+            <!-- Service 2 -->
+            <article class="service-card reveal reveal-delay-2">
+              <div class="service-card__icon" aria-hidden="true">🏢</div>
+              <h3 class="service-card__title">AI Data Center Development</h3>
+              <p class="service-card__desc">
+                End-to-end development of AI-ready data centers with capacities from
+                3 MW to 50 MW+, including modular facilities and AI research labs.
+              </p>
+              <ul class="service-card__list" aria-label="Service details">
+                <li class="service-card__item">Electrical &amp; cooling infrastructure</li>
+                <li class="service-card__item">Network architecture</li>
+                <li class="service-card__item">Modular AI data centers</li>
+                <li class="service-card__item">AI Research Labs</li>
+              </ul>
+            </article>
+
+            <!-- Service 3 -->
+            <article class="service-card reveal reveal-delay-3">
+              <div class="service-card__icon" aria-hidden="true">🖥️</div>
+              <h3 class="service-card__title">GPU Server Distribution</h3>
+              <p class="service-card__desc">
+                Authorized distribution and supply of enterprise AI servers including
+                NVIDIA HGX platforms, GPU clusters and liquid cooling systems.
+              </p>
+              <ul class="service-card__list" aria-label="Service details">
+                <li class="service-card__item">NVIDIA GPU servers &amp; HGX platforms</li>
+                <li class="service-card__item">AI clusters &amp; rack servers</li>
+                <li class="service-card__item">Storage &amp; networking equipment</li>
+                <li class="service-card__item">Liquid cooling systems</li>
+              </ul>
+            </article>
+
+            <!-- Service 4 -->
+            <article class="service-card reveal reveal-delay-1">
+              <div class="service-card__icon" aria-hidden="true">☁️</div>
+              <h3 class="service-card__title">AI Server Hosting</h3>
+              <p class="service-card__desc">
+                Enterprise GPU hosting services with dedicated clusters, power
+                redundancy and 24×7 remote hands support.
+              </p>
+              <ul class="service-card__list" aria-label="Service details">
+                <li class="service-card__item">Dedicated GPU &amp; private AI clusters</li>
+                <li class="service-card__item">Power &amp; network redundancy</li>
+                <li class="service-card__item">24×7 monitoring</li>
+                <li class="service-card__item">Secure facilities</li>
+              </ul>
+            </article>
+
+            <!-- Service 5 -->
+            <article class="service-card reveal reveal-delay-2">
+              <div class="service-card__icon" aria-hidden="true">🔗</div>
+              <h3 class="service-card__title">Colocation</h3>
+              <p class="service-card__desc">
+                Enterprise colocation from quarter rack to private suite, supporting
+                high-density workloads and liquid cooling.
+              </p>
+              <ul class="service-card__list" aria-label="Service details">
+                <li class="service-card__item">Quarter, half &amp; full rack options</li>
+                <li class="service-card__item">Private cage &amp; suite</li>
+                <li class="service-card__item">208V / 415V / high-density power</li>
+                <li class="service-card__item">Liquid cooling ready</li>
+              </ul>
+            </article>
+
+            <!-- Service 6 -->
+            <article class="service-card reveal reveal-delay-3">
+              <div class="service-card__icon" aria-hidden="true">⚙️</div>
+              <h3 class="service-card__title">Managed Operations</h3>
+              <p class="service-card__desc">
+                24×7 operations center providing infrastructure monitoring, preventive
+                maintenance, incident response and full asset management.
+              </p>
+              <ul class="service-card__list" aria-label="Service details">
+                <li class="service-card__item">Infrastructure &amp; GPU health monitoring</li>
+                <li class="service-card__item">Preventive maintenance</li>
+                <li class="service-card__item">Hardware replacement &amp; spares</li>
+                <li class="service-card__item">Emergency response</li>
+              </ul>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ====================================================
+           Solutions
+           ==================================================== -->
+      <section id="solutions" class="section solutions" aria-labelledby="solutions-heading">
+        <div class="container">
+
+          <div class="section-header reveal">
+            <p class="label">Solutions</p>
+            <h2 id="solutions-heading">Purpose-Built for AI Workloads</h2>
+            <p>From single GPU clusters to multi-megawatt AI campuses — we scale with you.</p>
+          </div>
+
+          <div class="solutions-grid">
+
+            <article class="solution-card reveal reveal-delay-1">
+              <span class="solution-card__icon" aria-hidden="true">🧠</span>
+              <h3 class="solution-card__title">Enterprise AI Infrastructure</h3>
+              <p class="solution-card__desc">Full-stack AI infrastructure for enterprise-scale deployments.</p>
+            </article>
+
+            <article class="solution-card reveal reveal-delay-2">
+              <span class="solution-card__icon" aria-hidden="true">🔢</span>
+              <h3 class="solution-card__title">GPU Clusters</h3>
+              <p class="solution-card__desc">NVIDIA-certified GPU clusters for LLM training &amp; inference.</p>
+            </article>
+
+            <article class="solution-card reveal reveal-delay-3">
+              <span class="solution-card__icon" aria-hidden="true">🔒</span>
+              <h3 class="solution-card__title">Private AI Cloud</h3>
+              <p class="solution-card__desc">Dedicated private cloud environments for sensitive AI workloads.</p>
+            </article>
+
+            <article class="solution-card reveal reveal-delay-4">
+              <span class="solution-card__icon" aria-hidden="true">🔬</span>
+              <h3 class="solution-card__title">AI Research Lab</h3>
+              <p class="solution-card__desc">Flexible labs for model development, testing and university collaboration.</p>
+            </article>
+
+            <article class="solution-card reveal reveal-delay-1">
+              <span class="solution-card__icon" aria-hidden="true">⚡</span>
+              <h3 class="solution-card__title">High Density Computing</h3>
+              <p class="solution-card__desc">High-power-density racks for GPU-intensive AI workloads.</p>
+            </article>
+
+            <article class="solution-card reveal reveal-delay-2">
+              <span class="solution-card__icon" aria-hidden="true">💧</span>
+              <h3 class="solution-card__title">Liquid Cooling</h3>
+              <p class="solution-card__desc">Direct liquid cooling for next-gen GPU servers and AI clusters.</p>
+            </article>
+
+            <article class="solution-card reveal reveal-delay-3">
+              <span class="solution-card__icon" aria-hidden="true">🌐</span>
+              <h3 class="solution-card__title">Edge AI Infrastructure</h3>
+              <p class="solution-card__desc">Distributed edge AI compute for low-latency inference workloads.</p>
+            </article>
+
+            <article class="solution-card reveal reveal-delay-4">
+              <span class="solution-card__icon" aria-hidden="true">🔄</span>
+              <h3 class="solution-card__title">AI Disaster Recovery</h3>
+              <p class="solution-card__desc">Redundant AI infrastructure for business-critical continuity.</p>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ====================================================
+           Process Timeline
+           ==================================================== -->
+      <section id="process" class="section process" aria-labelledby="process-heading">
+        <div class="container">
+
+          <div class="section-header reveal">
+            <p class="label">Project Delivery</p>
+            <h2 id="process-heading">Complete Project Development</h2>
+            <p>AIGRID manages every phase from site selection through live operations.</p>
+          </div>
+
+          <div class="process-timeline reveal" role="list">
+
+            <div class="process-step" role="listitem">
+              <div class="process-step__number">01</div>
+              <div class="process-step__label">Site Selection</div>
+              <div class="process-step__desc">Power access &amp; location analysis</div>
+              <span class="process-step__arrow" aria-hidden="true">›</span>
+            </div>
+
+            <div class="process-step" role="listitem">
+              <div class="process-step__number">02</div>
+              <div class="process-step__label">Power Planning</div>
+              <div class="process-step__desc">Utility &amp; grid strategy</div>
+              <span class="process-step__arrow" aria-hidden="true">›</span>
+            </div>
+
+            <div class="process-step" role="listitem">
+              <div class="process-step__number">03</div>
+              <div class="process-step__label">Engineering Design</div>
+              <div class="process-step__desc">Electrical, cooling &amp; network</div>
+              <span class="process-step__arrow" aria-hidden="true">›</span>
+            </div>
+
+            <div class="process-step" role="listitem">
+              <div class="process-step__number">04</div>
+              <div class="process-step__label">Construction</div>
+              <div class="process-step__desc">Modular &amp; rapid deployment</div>
+              <span class="process-step__arrow" aria-hidden="true">›</span>
+            </div>
+
+            <div class="process-step" role="listitem">
+              <div class="process-step__number">05</div>
+              <div class="process-step__label">Commissioning</div>
+              <div class="process-step__desc">Testing &amp; validation</div>
+              <span class="process-step__arrow" aria-hidden="true">›</span>
+            </div>
+
+            <div class="process-step" role="listitem">
+              <div class="process-step__number">06</div>
+              <div class="process-step__label">Operations</div>
+              <div class="process-step__desc">24×7 managed ops</div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ====================================================
+           Technology Partners
+           ==================================================== -->
+      <section id="partners" class="section partners" aria-labelledby="partners-heading">
+        <div class="container">
+
+          <div class="section-header reveal">
+            <p class="label">Ecosystem</p>
+            <h2 id="partners-heading">Technology Partners</h2>
+            <p>We work with the world's leading technology vendors to deliver enterprise-grade AI infrastructure.</p>
+          </div>
+
+          <div class="partners-grid reveal">
+            <div class="partner-card">NVIDIA</div>
+            <div class="partner-card">Supermicro</div>
+            <div class="partner-card">Dell</div>
+            <div class="partner-card">HPE</div>
+            <div class="partner-card">Cisco</div>
+            <div class="partner-card">Juniper</div>
+            <div class="partner-card">Vertiv</div>
+            <div class="partner-card">Schneider</div>
+            <div class="partner-card">ABB</div>
+            <div class="partner-card">Eaton</div>
+            <div class="partner-card">Cummins</div>
+            <div class="partner-card">Mitsubishi</div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- ====================================================
+           Investment / Partnership CTA
+           ==================================================== -->
+      <section id="investment" class="section investment" aria-labelledby="investment-heading">
+        <div class="investment__bg" aria-hidden="true"></div>
+        <div class="container">
+          <div class="investment__content reveal">
+
+            <p class="label" style="display:inline-block;margin-bottom:var(--space-4);">Partnership &amp; Investment</p>
+            <h2 id="investment-heading" class="investment__title">
+              Build the Future of<br />
+              <span class="text-gradient">AI Infrastructure Together</span>
+            </h2>
+            <p class="investment__desc">
+              AIGRID actively partners with investors, infrastructure funds, utilities,
+              developers and strategic partners to accelerate AI infrastructure deployment
+              across North America.
+            </p>
+
+            <div class="investment__models" role="list" aria-label="Partnership models">
+              <span class="investment__model-tag" role="listitem">Joint Venture</span>
+              <span class="investment__model-tag" role="listitem">Infrastructure Investment</span>
+              <span class="investment__model-tag" role="listitem">Project Development</span>
+              <span class="investment__model-tag" role="listitem">Land Partnership</span>
+              <span class="investment__model-tag" role="listitem">Power Partnership</span>
+              <span class="investment__model-tag" role="listitem">Capital Investment</span>
+              <span class="investment__model-tag" role="listitem">Strategic Alliance</span>
+            </div>
+
+            <div class="investment__cta">
+              <a href="#contact" class="btn btn--primary btn--lg">Start a Conversation</a>
+              <a href="mailto:partners@aigridventures.com" class="btn btn--secondary btn--lg">
+                partners@aigridventures.com
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ====================================================
+           Contact
+           ==================================================== -->
+      <section id="contact" class="section contact" aria-labelledby="contact-heading">
+        <div class="container">
+
+          <div class="section-header reveal">
+            <p class="label">Contact</p>
+            <h2 id="contact-heading">Let's Build Together</h2>
+          </div>
+
+          <div class="contact__grid">
+
+            <!-- Info -->
+            <div class="reveal">
+              <h3 class="contact__info-title">Get in Touch</h3>
+              <p class="contact__info-desc">
+                Whether you're looking for AI infrastructure, colocation, GPU hosting,
+                investment partnerships or project development — our team is ready to
+                help you build the future.
+              </p>
+
+              <div class="contact__channels" role="list">
+
+                <a href="mailto:info@aigridventures.com" class="contact__channel" role="listitem">
+                  <div class="contact__channel-icon" aria-hidden="true">✉️</div>
+                  <div>
+                    <div class="contact__channel-label">General Inquiries</div>
+                    <div class="contact__channel-value">info@aigridventures.com</div>
+                  </div>
+                </a>
+
+                <a href="mailto:sales@aigridventures.com" class="contact__channel" role="listitem">
+                  <div class="contact__channel-icon" aria-hidden="true">💼</div>
+                  <div>
+                    <div class="contact__channel-label">Sales</div>
+                    <div class="contact__channel-value">sales@aigridventures.com</div>
+                  </div>
+                </a>
+
+                <a href="mailto:partners@aigridventures.com" class="contact__channel" role="listitem">
+                  <div class="contact__channel-icon" aria-hidden="true">🤝</div>
+                  <div>
+                    <div class="contact__channel-label">Partnership &amp; Investment</div>
+                    <div class="contact__channel-value">partners@aigridventures.com</div>
+                  </div>
+                </a>
+
+                <a href="mailto:support@aigridventures.com" class="contact__channel" role="listitem">
+                  <div class="contact__channel-icon" aria-hidden="true">🛠️</div>
+                  <div>
+                    <div class="contact__channel-label">Technical Support</div>
+                    <div class="contact__channel-value">support@aigridventures.com</div>
+                  </div>
+                </a>
+
+              </div>
+            </div>
+
+            <!-- Form -->
+            <div class="reveal reveal-delay-2">
+              <form class="contact__form contact__form-el" novalidate aria-label="Contact form">
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="contact-name">Full Name *</label>
+                    <input
+                      id="contact-name"
+                      type="text"
+                      class="form-input"
+                      name="name"
+                      placeholder="John Smith"
+                      required
+                      autocomplete="name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="contact-company">Company</label>
+                    <input
+                      id="contact-company"
+                      type="text"
+                      class="form-input"
+                      name="company"
+                      placeholder="Acme Corp"
+                      autocomplete="organization"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="contact-email">Email Address *</label>
+                  <input
+                    id="contact-email"
+                    type="email"
+                    class="form-input"
+                    name="email"
+                    placeholder="john@example.com"
+                    required
+                    autocomplete="email"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="contact-interest">Area of Interest</label>
+                  <select id="contact-interest" class="form-select form-input" name="interest">
+                    <option value="">Select a service…</option>
+                    <option value="investment">AI Infrastructure Investment</option>
+                    <option value="datacenter">AI Data Center Development</option>
+                    <option value="gpu">GPU Server Distribution</option>
+                    <option value="hosting">AI Server Hosting</option>
+                    <option value="colo">Colocation</option>
+                    <option value="ops">Managed Operations</option>
+                    <option value="partnership">Partnership / Joint Venture</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="contact-message">Message *</label>
+                  <textarea
+                    id="contact-message"
+                    class="form-textarea"
+                    name="message"
+                    placeholder="Tell us about your project or requirements…"
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn--primary btn--lg" style="width:100%;">
+                  Send Message
+                </button>
+
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+
+    <!-- ====================================================
+         Footer
+         ==================================================== -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+
+        <div class="footer__main">
+
+          <!-- Brand -->
+          <div class="footer__brand">
+            <div class="footer__logo">
+              <div class="footer__logo-mark" aria-hidden="true">AG</div>
+              <span style="font-size:var(--text-lg);font-weight:700;letter-spacing:-0.01em;">
+                AIGRID <span style="color:var(--color-primary);">Ventures</span>
+              </span>
+            </div>
+            <p class="footer__tagline">
+              Investing, building and operating next-generation AI data centers and
+              GPU computing infrastructure across North America.
+            </p>
+            <p style="font-size:var(--text-xs);color:var(--color-text-subtle);">
+              AIGRID Ventures LLC · Headquartered in the United States
+            </p>
+          </div>
+
+          <!-- Services -->
+          <nav aria-label="Services links">
+            <div class="footer__col-title">Services</div>
+            <ul class="footer__links" role="list">
+              <li><a href="#services" class="footer__link">AI Infrastructure Investment</a></li>
+              <li><a href="#services" class="footer__link">AI Data Center Development</a></li>
+              <li><a href="#services" class="footer__link">GPU Server Distribution</a></li>
+              <li><a href="#services" class="footer__link">AI Server Hosting</a></li>
+              <li><a href="#services" class="footer__link">Colocation</a></li>
+              <li><a href="#services" class="footer__link">Managed Operations</a></li>
+            </ul>
+          </nav>
+
+          <!-- Solutions -->
+          <nav aria-label="Solutions links">
+            <div class="footer__col-title">Solutions</div>
+            <ul class="footer__links" role="list">
+              <li><a href="#solutions" class="footer__link">Enterprise AI Infrastructure</a></li>
+              <li><a href="#solutions" class="footer__link">GPU Clusters</a></li>
+              <li><a href="#solutions" class="footer__link">Private AI Cloud</a></li>
+              <li><a href="#solutions" class="footer__link">AI Research Lab</a></li>
+              <li><a href="#solutions" class="footer__link">High Density Computing</a></li>
+              <li><a href="#solutions" class="footer__link">Liquid Cooling</a></li>
+            </ul>
+          </nav>
+
+          <!-- Company -->
+          <nav aria-label="Company links">
+            <div class="footer__col-title">Company</div>
+            <ul class="footer__links" role="list">
+              <li><a href="#about"      class="footer__link">About AIGRID</a></li>
+              <li><a href="#process"    class="footer__link">Projects</a></li>
+              <li><a href="#partners"   class="footer__link">Technology Partners</a></li>
+              <li><a href="#investment" class="footer__link">Investment</a></li>
+              <li><a href="#contact"    class="footer__link">Careers</a></li>
+              <li><a href="#contact"    class="footer__link">Contact</a></li>
+            </ul>
+          </nav>
+
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="footer__bottom">
+          <p class="footer__legal">
+            &copy; <span id="footer-year"></span> AIGRID Ventures LLC. All rights reserved.
+          </p>
+          <div class="footer__legal-links" role="list">
+            <a href="#" class="footer__link" role="listitem">Privacy Policy</a>
+            <a href="#" class="footer__link" role="listitem">Terms of Service</a>
+            <a href="mailto:info@aigridventures.com" class="footer__link" role="listitem">
+              info@aigridventures.com
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+      // Inline: set current year in footer
+      document.getElementById('footer-year').textContent = new Date().getFullYear();
+    </script>
+
+  </body>
+</html>
